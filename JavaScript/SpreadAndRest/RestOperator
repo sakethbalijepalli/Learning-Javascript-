@@ -1,0 +1,20 @@
+// Gathers multiple elements into a single array or object.
+// Used in destructuring or collecting function arguments.
+let arr = [1, 2, 3, 4, 5, 6];
+
+const [first, second, third, ...rest] = arr;
+console.log(first);
+console.log(rest);
+
+function addTaxToPrices(taxRate, ...itemsBought) {
+    return itemsBought.map(items => items * taxRate)
+}
+
+console.log(addTaxToPrices(1.5, 34, 37, 29, 32));
+
+function reduce(...arr) {
+    return arr.reduce((total, num) => total + num, 0);
+}
+
+console.log(reduce(...arr));
+
