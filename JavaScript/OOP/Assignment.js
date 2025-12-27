@@ -1,4 +1,3 @@
-// Task 1: Build a function-based console log message generator
 function consoleStyler(color, background, fontSize, txt) {
 
     var message = "%c" + txt;
@@ -17,7 +16,7 @@ function celebrateStyler(reason) {
     } else if (reason === 'champions') {
         console.log(`%cCongrats on the title!`, fontStyle);
     } else {
-        console.log(message, style);
+        console.log(`%cReason: ${reason}`, fontStyle);
     }
 }
 
