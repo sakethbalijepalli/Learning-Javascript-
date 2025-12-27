@@ -1,5 +1,3 @@
-// Gathers multiple elements into a single array or object.
-// Used in destructuring or collecting function arguments.
 let arr = [1, 2, 3, 4, 5, 6];
 
 const [first, second, third, ...rest] = arr;
